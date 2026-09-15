@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Luxury streetwear hoodie supplier comparison — oversized back print, Stanley/Stella, Shopify POD.">
+  <title>Hoodie Supplier Gallery · Oversized Print</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="hero-eyebrow">Supplier research · 2026</div>
+      <h1>Oversized hoodie print <span>suppliers</span></h1>
+      <p class="hero-sub" id="use-case">Luxury streetwear hoodies with oversized back prints — Shopify dropship / POD.</p>
+      <div class="hero-meta">
+        <span>Research date: <strong id="research-date">—</strong></span>
+        <span>Ranked for border-to-border back graphics + Stanley/Stella</span>
+      </div>
+    </header>
+
+    <section class="reality" aria-labelledby="reality-title">
+      <h2 id="reality-title">Reality check</h2>
+      <p id="reality-text"></p>
+      <span class="tagline">Most POD ≈ large DTG panel — not classic plastisol edge-to-edge screen</span>
+    </section>
+
+    <section class="section" aria-labelledby="suppliers-title">
+      <div class="section-head">
+        <h2 id="suppliers-title">Ranked suppliers</h2>
+        <p>Cards with rank score ≥ 3</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filter suppliers">
+          <button type="button" class="chip active" data-filter="all">All</button>
+          <button type="button" class="chip" data-filter="stanley-stella">Stanley-Stella</button>
+          <button type="button" class="chip" data-filter="large-jumbo">Large-Jumbo print</button>
+          <button type="button" class="chip" data-filter="true-screen">True screen</button>
+          <button type="button" class="chip" data-filter="pod">POD</button>
+        </div>
+        <div class="count-label" id="visible-count"></div>
+      </div>
+
+      <div class="grid" id="supplier-grid"></div>
+    </section>
+
+    <section class="section ss-section" aria-labelledby="ss-title">
+      <div class="section-head">
+        <h2 id="ss-title">Stanley / Stella specialists</h2>
+        <p>Focused S/S paths — Gelato marked discontinued</p>
+      </div>
+      <div class="grid" id="ss-grid"></div>
+    </section>
+
+    <section class="section" aria-labelledby="recs-title">
+      <div class="section-head">
+        <h2 id="recs-title">Recommendations</h2>
+        <p>From research recommendations object</p>
+      </div>
+      <div class="recs" id="recs"></div>
+    </section>
+
+    <section class="section" aria-labelledby="low-title">
+      <h2 id="low-title" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Not recommended</h2>
+      <details class="low-wrap">
+        <summary>Not recommended · <span id="low-count">0</span> low-score suppliers</summary>
+        <div class="low-list" id="low-list"></div>
+      </details>
+    </section>
+
+    <aside class="notes">
+      <strong>Notes</strong>
+      <ul id="notes-list"></ul>
+    </aside>
+
+    <footer class="footer">
+      Static gallery · data from hoodie-suppliers-research.json · no build step
+    </footer>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
